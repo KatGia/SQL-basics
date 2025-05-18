@@ -1,4 +1,4 @@
-# sql-basics
+# SQL-basics
 
 ## Introduction: What Is SQL and Why Use It?
 
