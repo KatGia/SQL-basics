@@ -1,62 +1,58 @@
 # sql-basics
+
 ## Introduction: What Is SQL and Why Use It?
 
-**SQL (Structured Query Language)** is a powerful tool for data analysis, just like **Python** and **R**. Each language has its own strengths, and the best choice depends on the project’s needs and the user’s skills.
-
----
-
-## Comparing SQL, Python, and R
-
-| Language | Strengths | Best Use Case |
-|----------|-----------|----------------|
-| **SQL** | - Designed for relational databases<br>- Direct data querying<br>- Efficient with large datasets<br>- Simple, readable syntax | When you need to **extract, filter, or aggregate** data directly from a database |
-| **Python** | - General-purpose programming<br>- Powerful libraries (Pandas, NumPy, SciPy, scikit-learn)<br>- Easy SQL integration | When you want to **analyze, transform, or model** data flexibly |
-| **R** | - Specialized in statistics<br>- Advanced packages (dplyr, ggplot2)<br>- Excellent for data visualization | When you need **statistical analysis** or **scientific plotting** |
+**SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths, and the best choice depends on your project's requirements and your personal skills.
 
 ---
 
 ## Focus on SQL
 
 ### Key Features
-- **Built for Relational Databases**: SQL is specifically designed to query and manipulate data stored in structured tables.
-- **Direct Queries**: Allows users to write commands to retrieve, filter, and summarize data.
-- **Efficiency**: Optimized for reading and writing large datasets.
-- **Ease of Use**: SQL syntax is relatively simple and intuitive, even for non-programmers.
+
+* **Designed for Relational Databases**: SQL works with structured data organized in tables.
+* **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
+* **Optimized Performance**: Handles large datasets with speed and precision.
+* **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
 
 ### What Is a Relational Database?
-A **relational database**:
-- Organizes data into **tables** (rows = records, columns = fields)
-- Links tables through **primary keys** and **foreign keys**
-- Enables efficient data management and complex queries
 
-> Example: A database storing RNA-seq experiments might include tables for samples, results, and metadata — all connected through relationships.
+A **relational database**:
+
+* Organizes data into **tables** (rows = records, columns = fields)
+* Connects tables through **primary keys** and **foreign keys**
+* Enables complex data management and queries
+
+> **Example**: A database for RNA-seq experiments might have tables for samples, sequencing results, and metadata — all linked through relationships.
 
 ---
 
 ## What Can You Do with SQL?
 
-In summary, you use SQL statements to:
+With SQL, you can:
 
-- **Manipulate Data**: Modify and update data using aggregation or set operators.  
-  _Example: Filter gene counts into a new table to match only the patients included in a survival analysis._
+* **Manipulate Data**: Modify and aggregate data as needed.
+  *Example: Filter gene counts to create a subset matching patients in a survival study.*
 
-- **Query Data**: Check for the presence of specific information using queries, including nested queries.
+* **Query Data**: Search for specific information, including complex nested queries.
 
-- **Define the Database**: Create the structure of the database and its tables, so you can later use relationships between them to retrieve the information you need.
+* **Define Database Structure**: Create tables and set relationships that reflect your data model.
 
-- **Control Access**: Define who can view or modify the data in the database.
+* **Control Access**: Manage permissions to protect and share your data securely.
 
 ---
 
 ## Summary: When to Use Each Language
 
-- **SQL**: Best for querying and managing structured data in relational databases (e.g., biomedical datasets, experimental results).
-- **Python**: Great for data analysis, automation, and machine learning.
-- **R**: Ideal for statistical modeling and high-quality data visualization.
+| Language   | Best Use Case                                                                             |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| **SQL**    | Querying and managing structured data in relational databases (e.g., biomedical datasets) |
+| **Python and R** | Data analysis and visualization, automation, machine learning, statistical modeling |
 
-
+---
 
 ## What's Next?
 
-In the next sections, I will show you some examples to help you get started with SQL — including how to use it within the **R programming language
+In the upcoming sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R**.
+
 
