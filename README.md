@@ -1,5 +1,4 @@
 # sql-basics
-
 ## Introduction: What Is SQL and Why Use It?
 
 **SQL (Structured Query Language)** is a powerful tool for data analysis, just like **Python** and **R**. Each language has its own strengths, and the best choice depends on the project’s needs and the user’s skills.
@@ -31,6 +30,21 @@ A **relational database**:
 - Enables efficient data management and complex queries
 
 > Example: A database storing RNA-seq experiments might include tables for samples, results, and metadata — all connected through relationships.
+
+---
+
+## What Can You Do with SQL?
+
+In summary, you use SQL statements to:
+
+- **Manipulate Data**: Modify and update data using aggregation or set operators.  
+  _Example: Filter gene counts into a new table to match only the patients included in a survival analysis._
+
+- **Query Data**: Check for the presence of specific information using queries, including nested queries.
+
+- **Define the Database**: Create the structure of the database and its tables, so you can later use relationships between them to retrieve the information you need.
+
+- **Control Access**: Define who can view or modify the data in the database.
 
 ---
 
