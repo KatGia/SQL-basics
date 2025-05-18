@@ -53,6 +53,6 @@ With SQL, you can:
 
 ## What's Next?
 
-In the upcoming sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R**.
+In the upcoming sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
 
 
