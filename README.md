@@ -53,6 +53,8 @@ With SQL, you can:
 
 ## What's Next?
 
-In the upcoming sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
 
+Ready to try it yourself? You can start by downloading MySQL or using an online SQL editor like SQLite Online.
+
+In the next sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
 
