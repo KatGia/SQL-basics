@@ -53,3 +53,10 @@ In summary, you use SQL statements to:
 - **SQL**: Best for querying and managing structured data in relational databases (e.g., biomedical datasets, experimental results).
 - **Python**: Great for data analysis, automation, and machine learning.
 - **R**: Ideal for statistical modeling and high-quality data visualization.
+
+
+
+## What's Next?
+
+In the next sections, I will show you some examples to help you get started with SQL — including how to use it within the **R programming language
+
