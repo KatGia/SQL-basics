@@ -1,4 +1,5 @@
 # SQL-basics
+Correspondence: caterina.giachino@unina.it
 
 ## Introduction: What Is SQL and Why Use It?
 
