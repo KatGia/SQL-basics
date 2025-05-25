@@ -91,6 +91,7 @@ In the next sections, you'll find practical SQL examples to help you get started
 ---
 
 ## Example Schema (Simplified)
+Note: This schema is simplified. Real-world bioinformatics databases often include ontologies (e.g., GO terms), sample metadata, experimental protocols, and controlled vocabularies.
 
 ```sql
 CREATE TABLE Sequenze (
@@ -111,4 +112,4 @@ CREATE TABLE Geni (
   FOREIGN KEY (sequence_id) REFERENCES Sequenze(sequence_id)
 );
 
-Note : This schema is simplified. Real-world bioinformatics databases often include ontologies (e.g., GO terms), sample metadata, experimental protocols, and controlled vocabularies.
+
