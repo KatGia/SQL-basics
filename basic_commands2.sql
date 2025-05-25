@@ -1,5 +1,4 @@
-
--- Practice with SQL Commands
+-- Practice with SQL Commands (Extended)
 
 -- Creating Tables
 CREATE TABLE pazienti (
@@ -41,31 +40,58 @@ WHERE tipo_campione = 'RNA-seq';
 SELECT * FROM pazienti
 WHERE nome LIKE '%i';
 
--- JOIN between patients and samples to see who provided which sample
+-- Patients with unknown disease (IS NULL)
+SELECT * FROM pazienti
+WHERE malattia IS NULL;
+
+-- JOIN between patients and samples
 SELECT p.nome, c.tipo_campione, c.data_raccolta
 FROM pazienti p
 JOIN campioni c ON p.id_paziente = c.id_paziente;
 
--- Counting how many samples were collected for each type
-SELECT tipo_campione, COUNT(*) AS numero_campioni
-FROM campioni
-GROUP BY tipo_campione;
-
--- Average age of patients for each disease
-SELECT malattia, AVG(eta) AS eta_media
-FROM pazienti
-GROUP BY malattia;
-
--- Ordering patients by age in descending order
-SELECT * FROM pazienti
-ORDER BY eta DESC;
-
--- Using alias to make results more readable
-SELECT nome AS "Nome Paziente", eta AS "Età"
-FROM pazienti;
-
--- Finding patients without associated samples (LEFT JOIN + IS NULL)
+-- LEFT JOIN: patients without samples
 SELECT p.nome
 FROM pazienti p
 LEFT JOIN campioni c ON p.id_paziente = c.id_paziente
 WHERE c.id_campione IS NULL;
+
+-- COUNT: number of samples per type
+SELECT tipo_campione, COUNT(*) AS numero_campioni
+FROM campioni
+GROUP BY tipo_campione;
+
+-- HAVING: only sample types with more than 1 sample
+SELECT tipo_campione, COUNT(*) AS numero_campioni
+FROM campioni
+GROUP BY tipo_campione
+HAVING COUNT(*) > 1;
+
+-- AVG: average age per disease
+SELECT malattia, AVG(eta) AS eta_media
+FROM pazienti
+GROUP BY malattia;
+
+-- ORDER BY: patients by age descending
+SELECT * FROM pazienti
+ORDER BY eta DESC;
+
+-- Aliases: rename columns in output
+SELECT nome AS "Nome Paziente", eta AS "Età"
+FROM pazienti;
+
+-- UPDATE: change a patient's name
+UPDATE pazienti
+SET nome = 'Anna R. Rossi'
+WHERE id_paziente = 1;
+
+-- DELETE: remove a patient
+DELETE FROM pazienti
+WHERE id_paziente = 2;
+
+-- DISTINCT: find all unique diseases
+SELECT DISTINCT malattia
+FROM pazienti;
+
+-- NATURAL JOIN (requires same column name – example if both tables had id_paziente)
+-- This is illustrative: better to use explicit JOINs in practice
+-- SELECT * FROM pazienti NATURAL JOIN campioni;
