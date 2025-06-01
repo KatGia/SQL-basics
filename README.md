@@ -62,7 +62,7 @@ With SQL, you can:
 
 * **Control Access**: Manage permissions to protect and share your data securely.
 
-Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection.
+Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection. Keep attention!
 
 ---
 
