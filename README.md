@@ -41,7 +41,7 @@ They ensure structured access, efficient querying, and integration across divers
 
 A **relational database**:
 
-* Organizes data into **tables** (rows = records, columns = fields or attributes)
+* Organizes data into **tables** (rows = records or tuples, columns = fields or attributes)
 * Connects tables through **primary keys** and **foreign keys**
 * Enables complex data management and queries
 
