@@ -53,10 +53,6 @@ WHERE nome LIKE '%i';
 SELECT * FROM pazienti
 WHERE malattia IS NULL;
 
--- Finding all samples of type 'RNA-seq'.
-SELECT * FROM campioni
-WHERE tipo_campione = 'RNA-seq';
-
 -- ORDER BY: patients by age descending.
 SELECT * FROM pazienti
 ORDER BY eta DESC;
@@ -68,6 +64,12 @@ FROM pazienti;
 -- DISTINCT: find all unique diseases.
 SELECT DISTINCT malattia
 FROM pazienti;
+
+
+
+--- Queries on Specific Tables: finding all samples of type 'RNA-seq'.
+SELECT * FROM campioni
+WHERE tipo_campione = 'RNA-seq';
 
 
 
