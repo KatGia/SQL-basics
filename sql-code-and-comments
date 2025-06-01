@@ -1,4 +1,4 @@
-# Practice with SQL Commands (Definition and Manipulation Commands)
+# A. Practice with SQL Commands (Definition and Manipulation Commands)
 
 ### 1. Creating Tables
 **CREATE TABLE pazienti ( ... );**
@@ -65,5 +65,6 @@ INSERT INTO campioni (id_campione, id_paziente, tipo_campione, data_raccolta) VA
 (101, 1, 'RNA-seq', '2024-04-12'),
 (102, 2, 'siero', '2024-03-10'),
 (103, 3, 'RNA-seq', '2024-05-02');
+
 
 # End
