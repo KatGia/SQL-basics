@@ -99,3 +99,5 @@ SELECT nome,
            ELSE 'Young'
        END AS age_group
 FROM pazienti;
+
+# End
