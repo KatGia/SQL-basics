@@ -62,6 +62,7 @@ With SQL, you can:
 
 * **Control Access**: Manage permissions to protect and share your data securely.
 
+Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection.
 ---
 
 ## Summary: When to Use Each Language
@@ -74,7 +75,6 @@ With SQL, you can:
 ---
 
 ## What's Next?
-
 
 Ready to try it yourself? You can start experimenting with SQL using:
 
