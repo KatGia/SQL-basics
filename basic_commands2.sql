@@ -94,4 +94,5 @@ FROM pazienti;
 
 -- NATURAL JOIN (requires same column name – example if both tables had id_paziente)
 -- This is illustrative: better to use explicit JOINs in practice
--- SELECT * FROM pazienti NATURAL JOIN campioni;
+
+# End
