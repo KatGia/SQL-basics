@@ -11,19 +11,19 @@
 
 SQL databases in bioinformatics are used to manage:
 
-- Genomic and proteomic sequences
-- Gene annotations
-- Protein interactions
-- Gene expression profiles
+- Genomic and proteomic sequences;
+- Gene annotations;
+- Protein interactions;
+- Gene expression profiles.
 
 They ensure structured access, efficient querying, and integration across diverse data types.
 
 
 ### Examples of SQL-based Databases in Bioinformatics:
 
-- **Genomic Databases**: GenBank, NCBI, and Ensembl  
-- **Gene Expression Repositories**: ArrayExpress and GEO  
-- **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB  
+- **Genomic Databases**: GenBank, NCBI, and Ensembl.
+- **Gene Expression Repositories**: ArrayExpress and GEO.  
+- **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB.  
 
 ---
 
@@ -41,9 +41,9 @@ They ensure structured access, efficient querying, and integration across divers
 
 A **relational database**:
 
-* Organizes data into **tables** (rows = records, columns = fields)
-* Connects tables through **primary keys** and **foreign keys**
-* Enables complex data management and queries
+* Organizes data into **tables** (rows = records, columns = fields).
+* Connects tables through **primary keys** and **foreign keys**.
+* Enables complex data management and queries.
 
 **Example**: A gene expression study may store patients, samples, and expression data in separate—but connected—tables.
 
@@ -78,13 +78,13 @@ With SQL, you can:
 
 Ready to try it yourself? You can start experimenting with SQL using:
 
-- SQLite Online Editor
+- SQLite Online Editor;
 
-- A local SQLite or MySQL installation
+- A local SQLite or MySQL installation;
 
-- Integration with Python using sqlite3 and pandas
+- Integration with Python using sqlite3 and pandas;
 
-- Integration with R using DBI or sqldf
+- Integration with R using DBI or sqldf.
 
 In the next sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
 
