@@ -1,4 +1,4 @@
--- Tabella pazienti
+-- Creazione delle Table
 
 CREATE TABLE pazienti (
     id_paziente INTEGER PRIMARY KEY,
@@ -17,7 +17,7 @@ CREATE TABLE campioni (
 );
 
 
--- Tabella campioni
+-- Tabella pazienti e campioni 
 
 INSERT INTO pazienti (id_paziente, nome, eta, sesso, malattia) VALUES
 (1, 'Anna Rossi', 67, 'F', 'Adenocarcinoma gastrico'),
