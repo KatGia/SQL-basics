@@ -68,7 +68,7 @@ Note: Some operators apply only if the relationships have the same pattern (same
 
 ## Summary: When to Use Each Language
 
-| Language   | Best Use Case                                                                             |
+| Language   | Best use case                                                                             |
 | ---------- | ----------------------------------------------------------------------------------------- |
 | **SQL**    | Querying and managing structured data in relational databases (e.g., biomedical datasets) |
 | **Python and R** | Data analysis and visualization, automation, machine learning, statistical modeling |
