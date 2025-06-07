@@ -81,7 +81,7 @@ Ready to try it yourself? You can start experimenting with SQL using:
 
 - SQLite Online Editor;
 
-- A local SQLite or MySQL installation;
+- A local SQLite or MySQL installation (Instructions_to_install_MySQL_on_macOS.txt);
 
 - Integration with Python using sqlite3 and pandas;
 
