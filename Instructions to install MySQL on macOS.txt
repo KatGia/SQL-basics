@@ -1,0 +1,46 @@
+
+### Step-by-step instructions:
+
+**Step 1:** Go to the official MySQL website: [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/)
+
+**Step 2:** Click on the **MySQL Community Server** link.
+
+**Step 3:** Choose the appropriate version for your system (e.g., `macOS 15 ARM64`) and download the installer.
+
+**Step 4:** Run the installer and follow the steps until the installation is successfully completed.
+
+**Step 5:** Open **System Preferences** and check if MySQL appears. You should see an option to **Start** or **Stop MySQL Server** – this means it is installed.
+
+**Step 6:** Open the **Terminal** and run the following command to locate the MySQL binary:
+
+```bash
+sudo find /usr/local -name mysql
+```
+
+**Step 7:** Once you find the path (e.g., `/usr/local/mysql-9.3.0-macos15-arm64/bin/mysql`), run:
+
+```bash
+/usr/local/mysql-9.3.0-macos15-arm64/bin/mysql -u root -p
+```
+
+You'll be prompted to enter your password. If successful, you should see:
+
+```
+mysql>
+```
+
+You're now working inside the MySQL shell!
+
+---
+
+### Optional: Create your own database and tables
+
+MySQL includes default system databases like `mysql`, `information_schema`, etc.
+If you want to create your own database:
+
+```sql
+CREATE DATABASE test_caterina;
+USE test_caterina;
+```
+
+Now create your tables!
