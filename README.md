@@ -19,11 +19,23 @@ SQL databases in bioinformatics are used to manage:
 They ensure structured access, efficient querying, and integration across diverse data types.
 
 
-### Examples of SQL-based Databases in Bioinformatics:
+### Examples of using SQL in Bioinformatics: Pancancer Atlas BigQuery Tables
+The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
 
-- **Genomic Databases**: GenBank, NCBI, and Ensembl.
-- **Gene Expression Repositories**: ArrayExpress and GEO.  
-- **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB.  
+**Key points:**
+
+The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
+
+These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
+
+By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
+
+This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
+
+The resource includes extensive documentation and example queries, making it accessible even for users less familiar with BigQuery or cloud computing.
+
+**Example use case:**
+A researcher can write SQL queries to filter patients by mutation status, correlate mutations with gene expression, or retrieve clinical annotations — all directly within the cloud platform.
 
 ---
 
