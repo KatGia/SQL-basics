@@ -82,7 +82,7 @@ Ready to try it yourself? You can start experimenting with SQL using:
 
 - SQLite Online Editor;
 
-- A local SQLite or MySQL installation;
+- A local SQLite or MySQL installation (https://www.geeksforgeeks.org/installation-guide/how-to-install-mysql-on-macos/);
 
 - Integration with Python using sqlite3 and pandas;
 
