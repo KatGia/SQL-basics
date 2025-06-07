@@ -24,15 +24,13 @@ The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provi
 
 **Key points:**
 
-The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
+- The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
 
-These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
+- These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
 
-By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
+- By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
 
-This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
-
-The resource includes extensive documentation and example queries, making it accessible even for users less familiar with BigQuery or cloud computing.
+- This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
 
 **Example use case:**
 A researcher can write SQL queries to filter patients by mutation status, correlate mutations with gene expression, or retrieve clinical annotations — all directly within the cloud platform.
