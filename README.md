@@ -7,18 +7,6 @@
 
 **SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths, and the best choice depends on your project's requirements and your personal skills.
 
-## SQL in Bioinformatics: A Practical Example
-
-SQL databases in bioinformatics are used to manage:
-
-- Genomic and proteomic sequences;
-- Gene annotations;
-- Protein interactions;
-- Gene expression profiles.
-
-They ensure structured access, efficient querying, and integration across diverse data types.
-
-
 ### Examples of using SQL in Bioinformatics: Pancancer Atlas BigQuery Tables
 The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
 
