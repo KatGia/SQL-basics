@@ -78,7 +78,9 @@ WHERE tipo_campione = 'RNA-seq';
 SELECT p.nome, c.tipo_campione, c.data_raccolta
 FROM pazienti p
 JOIN campioni c ON p.id_paziente = c.id_paziente;
-
+*This command only displays matching combinations: if a patient has no associated samples, it will not appear in the result.
+*If you want to display patients without samples, you should use a LEFT JOIN.
+    
 -- LEFT JOIN: patients without samples.
 SELECT p.nome
 FROM pazienti p
