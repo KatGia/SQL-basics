@@ -63,7 +63,7 @@ With SQL, you can:
 Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection. Keep attention!
 
 **Final Objective:** 
-Prepare a well-structured relational schema, ready to be physically implemented in a DBMS, ensuring efficiency, consistency and data integrity.
+Prepare a well-structured relational schema, ready to be physically implemented in a DBMS (ensuring efficiency, consistency and data integrity) and normalize information (eliminate redundancies, avoid anomalies and improve maintainability/consistency of data).
 
 ---
 
