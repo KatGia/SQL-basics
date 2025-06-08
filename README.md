@@ -6,8 +6,6 @@
 ## Introduction to SQL:
 Welcome! This repository is a starting point for anyone curious about how SQL can support bioinformatics research. Even if you've never written a line of SQL, don’t worry — we’ve got you covered!
 
-**SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths—while Python and R are widely used for data wrangling and statistical analysis, SQL excels at organizing and querying structured biological data.
-
 ---
 
 ## Why Use SQL?
