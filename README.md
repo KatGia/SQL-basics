@@ -1,7 +1,7 @@
 # SQL-basics for Bioinformatics
 
-**Author**: Caterina Giachino  
-**Contact**: caterina.giachino@unina.it
+**Author**: Caterina Giachino and Gabriele Amato.
+**Contact**: caterina.giachino@unina.it; amatogab@gmail.com.
 
 ## Introduction: What Is SQL and Why Use It?
 
