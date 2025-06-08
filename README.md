@@ -29,7 +29,7 @@ A researcher can write SQL queries to filter patients by mutation status, correl
 
 ### Key Features
 
-* **Designed for Relational Databases**: SQL works with structured data organized in tables.
+* **Designed for Relational Databases**: SQL works with structured data organized in tables (logical model - relational tables).
 * **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
 * **Optimized Performance**: Handles large datasets with speed and precision.
 * **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
