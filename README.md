@@ -44,4 +44,4 @@ Prepare a well-structured relational schema, ready to be physically implemented 
 
 ---
 
-Ready to try it yourself? Explore our .sql scripts and start querying your own data!
+**Ready to try it yourself? Explore our .sql scripts and start querying your own data!**
