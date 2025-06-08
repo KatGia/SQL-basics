@@ -31,7 +31,7 @@ OPTIONAL: Create your own database and tables
 MySQL includes default system databases like mysql, information_schema, etc.
 If you want to create your own database:
 
-    CREATE DATABASE test_caterina;
-    USE test_caterina;
+    CREATE DATABASE test;
+    USE test;
 
 Now create your tables!
