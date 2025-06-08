@@ -1,8 +1,7 @@
 # SQL-basics for Bioinformatics
 
-**Authors**: Caterina Giachino and Gabriele Amato.
-**Contact**: caterina.giachino@unina.it 
-              amatogab@gmail.com.
+**Authors:** Caterina Giachino & Gabriele Amato.
+**Contact:** caterina.giachino@unina.it | amatogab@gmail.com
 
 ## Introduction: What Is SQL and Why Use It?
 
@@ -26,6 +25,20 @@ They ensure structured access, efficient querying, and integration across divers
 - **Gene Expression Repositories**: ArrayExpress and GEO.  
 - **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB.  
 
+### Another Example of Using SQL in Bioinformatics: PanCancer Atlas BigQuery Tables
+The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
+
+**Key points:**
+
+- The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
+
+- These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
+
+- By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
+
+- This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
+
+
 ---
 
 ## Why Use SQL?
@@ -36,17 +49,6 @@ They ensure structured access, efficient querying, and integration across divers
 * **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
 * **Optimized Performance**: Handles large datasets with speed and precision.
 * **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
-
-
-### What Is a Relational Database?
-
-A **relational database**:
-
-* Organizes data into **tables** (rows = records or tuples, columns = fields or attributes).
-* Connects tables through **primary keys** and **foreign keys**.
-* Enables complex data management and queries.
-
-**Example**: A gene expression study may store patients, samples, and expression data in separate—but connected—tables.
 
 ---
 
@@ -63,7 +65,8 @@ With SQL, you can:
 
 * **Control Access**: Manage permissions to protect and share your data securely.
 
-Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection. Keep attention!
+Note: Set operations like `UNION`, `INTERSECT`, and `EXCEPT` (or `MINUS`) require that both queries return the same number of columns with compatible data types. Be careful when using them!
+
 
 ---
 
@@ -82,7 +85,7 @@ Ready to try it yourself? You can start experimenting with SQL using:
 
 - SQLite Online Editor;
 
-- A local SQLite or MySQL installation (Instructions_to_install_MySQL_on_macOS.txt);
+- A local installation of SQLite or MySQL *(see Instructions_to_install_MySQL_on_macOS.txt)*;
 
 - Integration with Python using sqlite3 and pandas;
 
