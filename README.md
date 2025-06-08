@@ -1,27 +1,12 @@
 # SQL-basics for Bioinformatics
 
-**Authors:** Caterina Giachino and Gabriele Amato. 
-**Contact:** caterina.giachino@unina.it amatogab@gmail.com.
+**Authors:** Caterina Giachino & Gabriele Amato.
+**Contact:** caterina.giachino@unina.it | amatogab@gmail.com
 
-## Introduction: What Is SQL and Why Use It?
+## Introduction to SQL:
+Welcome! This repository is a starting point for anyone curious about how SQL can support bioinformatics research. Even if you've never written a line of SQL, don’t worry — we’ve got you covered!
 
-**SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths, and the best choice depends on your project's requirements and your personal skills.
-
-### Examples of using SQL in Bioinformatics: Pancancer Atlas BigQuery Tables
-The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
-
-**Key points:**
-
-- The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
-
-- These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
-
-- By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
-
-- This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
-
-**Example use case:**
-A researcher can write SQL queries to filter patients by mutation status, correlate mutations with gene expression, or retrieve clinical annotations — all directly within the cloud platform.
+**SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths—while Python and R are widely used for data wrangling and statistical analysis, SQL excels at organizing and querying structured biological data.
 
 ---
 
@@ -34,11 +19,9 @@ A researcher can write SQL queries to filter patients by mutation status, correl
 * **Optimized Performance**: Handles large datasets with speed and precision.
 * **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
 
-
 ### What Is a Relational Database?
 
 A **relational database**:
-
 * Organizes data into **tables** (rows = records or tuples, columns = fields or attributes).
 * Connects tables through **primary keys** and **foreign keys**.
 * Enables complex data management and queries.
@@ -47,71 +30,25 @@ A **relational database**:
 
 ---
 
-## What Can You Do with SQL?
+**What You Will Learn with SQL**
+By following these step-by-step instructions, you will:
 
-With SQL, you can:
+- Install MySQL on macOS or Windows and verify if it's running;
+- Access the MySQL shell via Terminal using the root user;
+- Create and manage your own databases and tables;
+- Insert, update, and delete data using SQL commands;
+- Query your data using SELECT, JOINs, WHERE, GROUP BY, and HAVING clauses;
+- Explore advanced SQL techniques, including:
+  -> Aliases, Aggregate functions, and CASE WHEN logic.
+  -> INNER / LEFT / FULL OUTER JOINs.
+  -> Views, Constraints (CHECK), and scalar functions.
+- Practice real-life examples using patients and samples datasets;
+- Understand how SQL handles NULL values, conditions, and projection;
+- Simulate advanced concepts like distributed selection, idempotent projections, and temporal queries.
 
-* **Manipulate Data**: Modify and aggregate data as needed.
-  *Example: Filter gene counts to create a subset matching patients in a survival study.*
-
-* **Query Data**: Search for specific information, including complex nested queries.
-
-* **Define Database Structure**: Create tables and set relationships that reflect your data model.
-
-* **Control Access**: Manage permissions to protect and share your data securely.
-
-Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection. Keep attention!
+---
 
 **Final Objective:** 
 Prepare a well-structured relational schema, ready to be physically implemented in a DBMS (ensuring efficiency, consistency and data integrity) and normalize information (eliminate redundancies, avoid anomalies and improve maintainability/consistency of data).
 
----
-
-## Summary: When to Use Each Language
-
-| Language   | Best Use Case                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| **SQL**    | Querying and managing structured data in relational databases (e.g., biomedical datasets) |
-| **Python and R** | Data analysis and visualization, automation, machine learning, statistical modeling |
-
----
-
-## What's Next?
-
-Ready to try it yourself? You can start experimenting with SQL using:
-
-- SQLite Online Editor;
-
-- A local SQLite or MySQL installation (Instructions_to_install_MySQL_on_macOS.txt);
-
-- Integration with Python using sqlite3 and pandas;
-
-- Integration with R using DBI or sqldf.
-
-In the next sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
-
----
-
-## Example Schema (Simplified)
-Note: This schema is simplified. Real-world bioinformatics databases often include ontologies (e.g., GO terms), sample metadata, experimental protocols, and controlled vocabularies.
-
-```sql
-CREATE TABLE Sequenze (
-  sequence_id INT PRIMARY KEY AUTO_INCREMENT,
-  sequence_name VARCHAR(255),
-  sequence_type ENUM('DNA', 'RNA', 'PROTEIN'),
-  sequence_data TEXT
-);
-
-CREATE TABLE Geni (
-  gene_id INT PRIMARY KEY AUTO_INCREMENT,
-  gene_name VARCHAR(255),
-  chromosome VARCHAR(10),
-  start_position INT,
-  end_position INT,
-  description TEXT,
-  sequence_id INT,
-  FOREIGN KEY (sequence_id) REFERENCES Sequenze(sequence_id)
-);
-
-
+Ready to try it yourself? Explore our .sql scripts and start querying your own data!
