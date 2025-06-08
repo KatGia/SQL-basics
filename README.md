@@ -62,6 +62,9 @@ With SQL, you can:
 
 Note: Some operators apply only if the relationships have the same pattern (same attributes and domains), such as for union, difference, and intersection. Keep attention!
 
+**Final Objective:** 
+Prepare a well-structured relational schema, ready to be physically implemented in a DBMS, ensuring efficiency, consistency and data integrity.
+
 ---
 
 ## Summary: When to Use Each Language
@@ -74,7 +77,6 @@ Note: Some operators apply only if the relationships have the same pattern (same
 ---
 
 ## What's Next?
-
 
 Ready to try it yourself? You can start experimenting with SQL using:
 
