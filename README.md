@@ -3,6 +3,8 @@
 **Authors:** Caterina Giachino & Gabriele Amato.
 **Contact:** caterina.giachino@unina.it | amatogab@gmail.com
 
+---
+
 ## Introduction To SQL:
 Welcome! This repository is a starting point for anyone curious about how SQL can support bioinformatics research. Even if you've never written a line of SQL, don’t worry — we’ve got you covered!
 
