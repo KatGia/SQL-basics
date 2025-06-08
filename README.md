@@ -3,11 +3,15 @@
 **Authors:** Caterina Giachino & Gabriele Amato.
 **Contact:** caterina.giachino@unina.it | amatogab@gmail.com
 
-## Introduction: What Is SQL and Why Use It?
+---
+
+## Introduction: What is SQL and why use It?
 
 **SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths, and the best choice depends on your project's requirements and your personal skills.
 
-## SQL in Bioinformatics: A Practical Example
+---
+
+## SQL in bioinformatics: a practical example
 
 SQL databases in bioinformatics are used to manage:
 
@@ -19,13 +23,13 @@ SQL databases in bioinformatics are used to manage:
 They ensure structured access, efficient querying, and integration across diverse data types.
 
 
-### Examples of SQL-based Databases in Bioinformatics:
+### Examples of SQL-based databases in bioinformatics:
 
 - **Genomic Databases**: GenBank, NCBI, and Ensembl.  
 - **Gene Expression Repositories**: ArrayExpress and GEO.  
 - **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB.  
 
-### Another Example of Using SQL in Bioinformatics: PanCancer Atlas BigQuery Tables
+### Another example of using SQL in bioinformatics: panCancer atlas bigQuery tables
 The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
 
 **Key points:**
@@ -43,8 +47,6 @@ The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provi
 
 ## Why Use SQL?
 
-### Key Features
-
 * **Designed for Relational Databases**: SQL works with structured data organized in tables.
 * **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
 * **Optimized Performance**: Handles large datasets with speed and precision.
@@ -53,8 +55,6 @@ The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provi
 ---
 
 ## What Can You Do with SQL?
-
-With SQL, you can:
 
 * **Manipulate Data**: Modify and aggregate data as needed.
   *Example: Filter gene counts to create a subset matching patients in a survival study.*
@@ -70,7 +70,7 @@ Note: Set operations like `UNION`, `INTERSECT`, and `EXCEPT` (or `MINUS`) requir
 
 ---
 
-## Summary: When to Use Each Language
+## Summary: when to use each language
 
 | Language   | Best use case                                                                             |
 | ---------- | ----------------------------------------------------------------------------------------- |
@@ -79,7 +79,7 @@ Note: Set operations like `UNION`, `INTERSECT`, and `EXCEPT` (or `MINUS`) requir
 
 ---
 
-## What's Next?
+## What's next?
 
 Ready to try it yourself? You can start experimenting with SQL using:
 
@@ -95,7 +95,7 @@ In the next sections, you'll find practical SQL examples to help you get started
 
 ---
 
-## Example Schema (Simplified)
+## Example schema (simplified)
 Note: This schema is simplified. Real-world bioinformatics databases often include ontologies (e.g., GO terms), sample metadata, experimental protocols, and controlled vocabularies.
 
 ```sql
