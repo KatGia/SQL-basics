@@ -1,4 +1,4 @@
-# SQL-basics for Bioinformatics
+# SQL Basics for Bioinformatics
 
 **Authors:** Caterina Giachino & Gabriele Amato.
 **Contact:** caterina.giachino@unina.it | amatogab@gmail.com
