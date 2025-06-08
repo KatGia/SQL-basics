@@ -42,4 +42,6 @@ By following these step-by-step instructions, you will:
 **Final Objective:** 
 Prepare a well-structured relational schema, ready to be physically implemented in a DBMS (ensuring efficiency, consistency and data integrity) and normalize information (eliminate redundancies, avoid anomalies and improve maintainability/consistency of data).
 
+---
+
 Ready to try it yourself? Explore our .sql scripts and start querying your own data!
