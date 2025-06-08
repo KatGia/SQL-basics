@@ -1,23 +1,14 @@
-# SQL Basics for Bioinformatics
+# SQL Basics For Bioinformatics
 
 **Authors:** Caterina Giachino & Gabriele Amato.
 **Contact:** caterina.giachino@unina.it | amatogab@gmail.com
 
-## Introduction to SQL:
+## Introduction To SQL:
 Welcome! This repository is a starting point for anyone curious about how SQL can support bioinformatics research. Even if you've never written a line of SQL, don’t worry — we’ve got you covered!
 
 ---
 
-## Why Use SQL?
-
-### Key Features
-
-* **Designed for Relational Databases**: SQL works with structured data organized in tables (logical model - relational tables).
-* **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
-* **Optimized Performance**: Handles large datasets with speed and precision.
-* **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
-
-### What Is a Relational Database?
+### What Is A Relational Database?
 
 A **relational database**:
 * Organizes data into **tables** (rows = records or tuples, columns = fields or attributes).
@@ -28,7 +19,7 @@ A **relational database**:
 
 ---
 
-**What You Will Learn with SQL**
+**What You Will Learn With SQL**
 By following these step-by-step instructions, you will:
 
 - Install MySQL on macOS or Windows and verify if it's running;
