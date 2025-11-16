@@ -5,116 +5,124 @@
 
 ---
 
-## Introduction: What is SQL and why use It?
+# 🏗️ SQL, Database Infrastructure, and Data Access Models
 
-**SQL (Structured Query Language)** is a powerful tool for data analysis, alongside **Python** and **R**. Each language has its unique strengths, and the best choice depends on your project's requirements and your personal skills.
-
----
-
-## SQL in bioinformatics: a practical example
-
-SQL databases in bioinformatics are used to manage:
-
-- Genomic and proteomic sequences;
-- Gene annotations;
-- Protein interactions;
-- Gene expression profiles.
-
-They ensure structured access, efficient querying, and integration across diverse data types.
-
-
-### Examples of SQL-based databases in bioinformatics:
-
-- **Genomic Databases**: GenBank, NCBI, and Ensembl.  
-- **Gene Expression Repositories**: ArrayExpress and GEO.  
-- **Protein Sequence Databases**: UniProt, Swiss-Prot, and PDB.  
-
-### Another example of using SQL in bioinformatics: panCancer atlas bigQuery tables
-The PanCancer Atlas project by the Institute for Systems Biology (ISB-CGC) provides an excellent example of how SQL databases can be used to explore large-scale cancer genomics data without downloading massive datasets.
-
-**Key points:**
-
-- The PanCancer Atlas data are hosted as BigQuery tables on Google Cloud Platform.
-
-- These tables faithfully reproduce the original PanCancer Atlas datasets, integrating multiple data types such as DNA mutation status and RNA expression levels.
-
-- By using SQL queries on these tables, researchers can easily explore and combine complex multi-omics data.
-
-- This approach allows efficient and flexible data analysis, eliminating the need to download and manage large raw files locally.
-
+SQL is a language designed to **manage databases**, but SQL alone is not enough to build a fully functional data system. Working with a real database requires two essential components:
 
 ---
 
-## Why Use SQL?
+## 1. 📖 **SQL Knowledge**
 
-* **Designed for Relational Databases**: SQL works with structured data organized in tables.
-* **Direct Queries**: Write commands to retrieve, filter, and summarize data efficiently.
-* **Optimized Performance**: Handles large datasets with speed and precision.
-* **Simple Syntax**: Easy to learn and use—even if you're not a programmer.
+SQL provides the ability to:
 
----
+* create tables and define relationships (schema design)
+* insert, update, and delete data
+* perform powerful queries on large datasets
+* manage access control and user permissions
+* optimize indexing and performance
 
-## What Can You Do with SQL?
-
-* **Manipulate Data**: Modify and aggregate data as needed.
-  *Example: Filter gene counts to create a subset matching patients in a survival study.*
-
-* **Query Data**: Search for specific information, including complex nested queries.
-
-* **Define Database Structure**: Create tables and set relationships that reflect your data model.
-
-* **Control Access**: Manage permissions to protect and share your data securely.
-
-Note: Set operations like `UNION`, `INTERSECT`, and `EXCEPT` (or `MINUS`) require that both queries return the same number of columns with compatible data types. Be careful when using them!
-
+In other words, **SQL is the logical tool** that allows you to operate on your data.
 
 ---
 
-## Summary: when to use each language
+## 2. 🖥️ **Technical Infrastructure (Hardware + Software)**
 
-| Language   | Best use case                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| **SQL**    | Querying and managing structured data in relational databases (e.g., biomedical datasets) |
-| **Python and R** | Data analysis and visualization, automation, machine learning, statistical modeling |
+A database also requires a **stable and available technical base**, such as:
 
----
+* a physical or virtual server that is always running
+* sufficient computing power
+* adequate RAM and storage
+* regular backups and monitoring
+* strong security practices and controlled access
+* a DBMS (Database Management System) such as MySQL, PostgreSQL, MariaDB, or SQL Server
 
-## What's next?
-
-Ready to try it yourself? You can start experimenting with SQL using:
-
-- SQLite Online Editor;
-
-- A local installation of SQLite or MySQL *(see Instructions_to_install_MySQL_on_macOS.txt)*;
-
-- Integration with Python using sqlite3 and pandas;
-
-- Integration with R using DBI or sqldf.
-
-In the next sections, you'll find practical SQL examples to help you get started — including how to use SQL within **R** and **Python**.
+This part represents a **financial investment**, especially for databases that must support high traffic or large amounts of data.
 
 ---
 
-## Example schema (simplified)
-Note: This schema is simplified. Real-world bioinformatics databases often include ontologies (e.g., GO terms), sample metadata, experimental protocols, and controlled vocabularies.
+# 🔒 Private Databases vs 🌐 Public Databases
 
-```sql
-CREATE TABLE Sequenze (
-  sequence_id INT PRIMARY KEY AUTO_INCREMENT,
-  sequence_name VARCHAR(255),
-  sequence_type ENUM('DNA', 'RNA', 'PROTEIN'),
-  sequence_data TEXT
-);
+It is important to distinguish between **private** and **public** databases, as they differ in infrastructure, access, and purpose.
 
-CREATE TABLE Geni (
-  gene_id INT PRIMARY KEY AUTO_INCREMENT,
-  gene_name VARCHAR(255),
-  chromosome VARCHAR(10),
-  start_position INT,
-  end_position INT,
-  description TEXT,
-  sequence_id INT,
-  FOREIGN KEY (sequence_id) REFERENCES Sequenze(sequence_id)
-);
+---
+
+## 🔒 **Private Database**
+
+* Hosted on a local machine or a private server.
+* Only the creator (or a restricted group) can access it.
+* Suitable for internal projects, sensitive data, and development.
+* Not accessible from the internet.
+* Access occurs through local clients (e.g., MySQL Workbench, R, Python, terminal).
+
+Examples:
+
+* A lab maintaining its own sequencing data
+* A company storing genomic data under NDA
+* A researcher running MySQL locally on their laptop
+
+---
+
+## 🌐 **Public Database**
+
+To expose a database over the internet, you need:
+
+* a **domain name** (purchased from an internet registrar)
+* a **public server** that hosts the database or API
+* authentication and security layers
+* an interface between the users and the database
+
+Importantly, users generally **do not access the database directly**.
+Instead, they use:
+
+* a web interface
+* a graphical dashboard
+* or, most commonly, an **API**
+
+---
+
+# 🔗 The Role of APIs
+
+An **API (Application Programming Interface)** acts as a protective layer that:
+
+* allows users to retrieve data without directly interacting with the database
+* enforces security rules and authentication
+* standardizes requests
+* enables access from R, Python, web apps, and workflows
+
+APIs are essential for public databases because they:
+
+* protect the underlying database
+* prevent heavy or unsafe queries
+* enable scalable and controlled data distribution
+
+---
+
+# 🧬 Real Example: Accessing TCGA Data via R (TCGAbiolinks)
+
+The TCGA project **does not expose its underlying SQL databases directly**.
+Instead:
+
+1. TCGA data is hosted on public GDC servers.
+2. GDC provides **REST APIs** for accessing these datasets.
+3. Tools such as **TCGAbiolinks** (R/Bioconductor) connect to these APIs.
+4. RStudio becomes a client that sends API requests — *not* direct SQL queries.
+
+This means:
+
+* The infrastructure (servers, databases, security) is maintained by GDC/NIH.
+* Users interact with high-level R functions that call the APIs behind the scenes.
+* The experience is simplified, reproducible, and safe.
+
+---
+
+# 🧭 Conceptual Summary
+
+| Layer               | What it provides                       | Who handles it               |
+| ------------------- | -------------------------------------- | ---------------------------- |
+| **SQL**             | Logical data operations                | Bioinformatician / Developer |
+| **DBMS**            | Software managing tables & queries     | Server / Sysadmin            |
+| **Server hardware** | Stability, uptime, computational power | Institution / Cloud provider |
+| **API**             | Controlled public access               | Software engineering team    |
+| **User**            | Access through R, Python, web          | Researcher                   |
 
 
