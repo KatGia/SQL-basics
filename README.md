@@ -125,4 +125,7 @@ This means:
 | **API**             | Controlled public access               | Software engineering team    |
 | **User**            | Access through R, Python, web          | Researcher                   |
 
+---
 
+## 🛠️ Resources for Further Study
+**W3Schools SQL Tutorial:** https://www.w3schools.com/sql/
